@@ -98,8 +98,9 @@ void receiving(int servoValStart, int servoValStop)
       for(i=0;i<4;i++)      {
         Serial.println(controllerVals[i], DEC);
       }
-
-      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      //HEY THE CODE IS HERE
+      
       //Put drive code here
       //Use controllerVals array
       
@@ -195,7 +196,7 @@ void receiving(int servoValStart, int servoValStop)
       for(i=0;i<4;i++)      {
         Serial.println(controllerVals[i], DEC);
       }
-
+//HEY THE CODE STOPS HERE THAT I WROTE
       ///////////////////////////////////////////////////////////////////////////////////////////////
       //Put drive code here
       //Use controllerVals array
