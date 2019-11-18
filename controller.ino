@@ -1,3 +1,10 @@
+//All the code here has been given to us except for what is in hte forward slash section.
+
+//example
+/////////////////////////////////////////////////////////////////////////////////////////////////
+look for something like this and this is where I implemeted the code.
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 #include <Servo.h>
 #include <SoftwareSerial.h>
 Servo myservo; // create servo object to control a servo
