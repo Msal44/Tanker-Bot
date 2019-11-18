@@ -1,10 +1,17 @@
+//Author: Melvyn Salvatierra
+//NIU Robotics
+//Team 2
+
 //All the code here has been given to us except for what is in hte forward slash section.
 
 //example
+/////////////////////////////////////////////////////////////////////////////////////////////////
+look for something like this and this is where I implemeted the code.
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////
-code
-//////////////////////////////////////////////
+
+
+
 #include <SoftwareSerial.h>
 #include <Servo.h>
 
@@ -192,57 +199,57 @@ void receiving(int servoValStart, int servoValStop)
       ///////////////////////////////////////////////////////////////////////////////////////////////
       //Put drive code here
       //Use controllerVals array
-      if(controllerVals[0] > 200)
+      if(controllerVals[0] > 200) //if controllerVals[0] is greater than 200 that it will move forward. This maps what the bot does. Contil
       {
-        //move forward
+        //tanker bot moves forward
 
-        //left side track of the thanker bot
+        //left side track of the tanker bot
         analogWrite( A1, 255); //front left track side of the tanker bot as well as the motor
-        analogWrite( A2, 0); //back
+        analogWrite( A2, 0); //back left side of the tanker bot as well as the moter
 
         //right side 
-       analogWrite( A5, 255); //front
-       analogWrite( A3, 0); //back
-       Serial.println("forwards");
+       analogWrite( A5, 255); //front right track side of the tanker bot as well as the motor
+       analogWrite( A3, 0); //back right sid of the tanker bot as well as the motor
+       Serial.println("forwards"); // If this prints in the console it wil show that the bot is moving forward works
       }
-      else if(controllerVals[0] < 50)
+      else if(controllerVals[0] < 50) //controllerVals[0] is less than 50 will allow the bot to move backward
       {
         //move backwards
 
         //left side 
-         analogWrite(A1, 0); //front 
-         analogWrite(A2, 255); //back
+         analogWrite(A1, 0); //front left motor and wheel of the track 
+         analogWrite(A2, 255); //back left motor and wheel of the track
 
         //right side 
-         analogWrite(A5, 0); //front 
-         analogWrite(A3,255); // back*/
-         Serial.println("backwards");
+         analogWrite(A5, 0); //front right motor and wheel of the track
+         analogWrite(A3,255); // back right motor and wheel of the track
+         Serial.println("backwards"); //If this prints in the console it will show the bot moving backward.
       }
-      else if(controllerVals[1] > 200)
+      else if(controllerVals[1] > 200) //contollerVals[1] hass to be greater than 200 for the tanker bot to turn right
       {
-        //clockwise
+        //clockwise (aka turning right)
 
         //left side
-         analogWrite(A1, 255); //front
-         analogWrite(A2, 0); //back
+         analogWrite(A1, 255); //front left side motor and wheel of the track
+         analogWrite(A2, 0); //back left sode motor and wheel of the tracl
 
          //ride side
-         analogWrite(A5, 0); //front
-         analogWrite(A3, 255); //back
-         Serial.println("turn right");
+         analogWrite(A5, 0); //front right side motor and wheel of the track
+         analogWrite(A3, 255); //back right side motor and weh
+         Serial.println("turn right"); //If this prints it shows that the bot is truning right
       }
-      else if(controllerVals[1] < 50)
+      else if(controllerVals[1] < 50)//controllerVals[1] has to be less than 50 to turn left
       {
-        //counter clock wise
+        //counter clock wise (aka the bot will turn left)
         
         //left side
-         analogWrite(A1, 0); //front 
-         analogWrite(A2, 255); //back
+         analogWrite(A1, 0); //front left motor and wheel of the track
+         analogWrite(A2, 255); //back left wheel and motor of the track
 
         //right side
-         analogWrite(A5, 255); //front
-         analogWrite(A3, 0); //back*/
-         Serial.println("turn left");
+         analogWrite(A5, 255); //front right side of the motor and wheel of the track
+         analogWrite(A3, 0); //back right side of the motor and wheel of the track
+         Serial.println("turn left"); //if this prints out then the motor works
       }
       else
       {
@@ -338,7 +345,6 @@ void receiving(int servoValStart, int servoValStop)
        analogWrite(A5, 0);
        Serial.println("stopped");
       }
-     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       
       t5 = millis();
       if(controllerVals[3] == 0)
