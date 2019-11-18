@@ -9,7 +9,7 @@ look for something like this and this is where I implemeted the code.
 #include <SoftwareSerial.h>
 Servo myservo; // create servo object to control a servo
 /////////////////////////////////////////////////////////////
-SoftwareSerial mySerial(11,9); //sending and recieveing      
+SoftwareSerial mySerial(11,9); //sending and recieveing 
 /////////////////////////////////////////////////////////////
   int valX;
   int valY;
