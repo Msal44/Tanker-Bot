@@ -98,8 +98,6 @@ void receiving(int servoValStart, int servoValStop)
       for(i=0;i<4;i++)      {
         Serial.println(controllerVals[i], DEC);
       }
-      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      //HEY THE CODE IS HERE
       
       //Put drive code here
       //Use controllerVals array
@@ -196,8 +194,9 @@ void receiving(int servoValStart, int servoValStop)
       for(i=0;i<4;i++)      {
         Serial.println(controllerVals[i], DEC);
       }
-//HEY THE CODE STOPS HERE THAT I WROTE
       ///////////////////////////////////////////////////////////////////////////////////////////////
+      //HEY THE CODE STARTS HERE
+      
       //Put drive code here
       //Use controllerVals array
       if(controllerVals[0] > 200) //if controllerVals[0] is greater than 200 that it will move forward. This maps what the bot does. Contil
@@ -260,6 +259,7 @@ void receiving(int servoValStart, int servoValStop)
        analogWrite(A5, 0);
        Serial.println("stopped");
       }
+      //HEY THE CODE ENDS HERE THAT I WROTE
      /////////////////////////////////////////////////////////////////////////////////////////////////   
       
       t5 = millis();
