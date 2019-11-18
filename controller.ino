@@ -32,17 +32,19 @@ void setup() {
 }
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void loop() {
+  //analogRead() Reads the value from the specified analog pin. 
   valX = analogRead(joypinX); // reads the value of the potentiometer (value between 0 and 1023)
   valY = analogRead(joypinY);
   valJB = digitalRead(joybuttonpin);
   valBB = digitalRead(buttonpin);
+  //digitalRead() Reads the value from a specified digital pin, either HIGH or LOW.
 
 Serial.println("bluh");
 
   valX = map(valX, 0, 1023, 0, 255); // scale it to use it with the servo (value between 0 and 180)
   valY = map(valY, 0, 1023, 0, 255);
   mySerial.print('A');  // this signifies the start of the serial code
-  mySerial.print(char(valX));
+  mySerial.print(char(valX)); //we print the values by typecasting it to a char with all mySerial.print()
   mySerial.print(char(valY));
   mySerial.print(char(valJB));
   mySerial.print(char(valBB));
