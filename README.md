@@ -1,3 +1,3 @@
 # Tanker-Bot
-Robotics Club Project.
-In the beginning of this prjects we were told to learn on our own by using the arduino website https://www.arduino.cc/ as well as understand the hardware that was being used. I also worked with Electrical Engineers and Mechanical Engineers to buiold the bot, but I will only be focusing on the code for the tanker bot.
+NIU Robotics Club Project.
+Begginers project for NIU robotics club working with Electrical Engineers and Mechanical Engineers to build a tanker bot. While developing the tanker bot the team used https://www.arduino.cc/ as a resoruce to create the tanker bot. 
